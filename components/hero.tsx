@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
@@ -23,10 +24,23 @@ export default function Hero() {
             </Button>
           </div>
 
-         
+          <div className="flex justify-center md:justify-end">
+            <Image
+              src="/hero.svg"
+              alt="Lessons and insights illustration"
+              width={700}
+              height={700}
+              className="w-full max-w-md lg:max-w-xl drop-shadow-lg"
+              priority
+            />
+          </div>
         </div>
 
-      
+        <div className="flex justify-center mt-12 md:mt-16 space-x-3">
+          <span className="block w-3 h-3 bg-gray-300 rounded-full" />
+          <span className="block w-3 h-3 bg-green-500 rounded-full" />
+          <span className="block w-3 h-3 bg-gray-300 rounded-full" />
+        </div>
       </div>
     </section>
   );
