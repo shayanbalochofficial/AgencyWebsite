@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section className="bg-linear-to-b from-white via-blue-50/30 to-white py-12 md:py-20 lg:py-28">
+    <section className="bg-linear-to-b from-white via-blue-50/30 to-white border-b-2 py-12 md:py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="text-center md:text-left">
