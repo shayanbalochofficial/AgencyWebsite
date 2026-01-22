@@ -2,13 +2,14 @@ import Navbar from "@/components/header";
 import React from "react";
 import Hero from "./../components/hero";
 import OurClients from "./../components/our-clients";
-import { Users, Building2,  } from "lucide-react";
+import { Users, Building2, Bike } from "lucide-react";
 import {
   Card,
   CardContent,
   CardDescription,
   CardTitle,
 } from "@/components/ui/card";
+import PixelgradeSection from "@/components/section";
 
 function page() {
   return (
@@ -48,15 +49,39 @@ function page() {
               </CardContent>
             </Card>
 
-            {/* Doosra goes ugh */}
+            {/* Doosra */}
             <Card className="border-0 shadow-none bg-transparent text-center">
               <CardContent className="pt-8">
                 <Building2 className="w-16 h-16 md:w-20 md:h-20 mx-auto text-green-600" />
+                <CardTitle className="mt-8 text-2xl md:text-3xl font-bold text-gray-900">
+                  National Associations
+                </CardTitle>
+                <CardDescription className="mt-6 text-base md:text-lg text-gray-600 max-w-md mx-auto">
+                  Our membership management software provides full automation of
+                  membership renewals and payments
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            {/* teesra */}
+            <Card className="border-0 shadow-none bg-transparent text-center">
+              <CardContent className="pt-8">
+                <Bike className="w-16 h-16 md:w-20 md:h-20 mx-auto text-green-600" />
+                <CardTitle className="mt-8 text-2xl md:text-3xl font-bold text-gray-900">
+                  Clubs And Groups
+                </CardTitle>
+                <CardDescription className="mt-6 text-base md:text-lg text-gray-600 max-w-md mx-auto">
+                  Our membership management software provides full automation of
+                  membership renewals and payments
+                </CardDescription>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
+
+      {/* section: Section */}
+      <PixelgradeSection />
     </div>
   );
 }
