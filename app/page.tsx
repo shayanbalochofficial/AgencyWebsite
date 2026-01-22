@@ -10,6 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import PixelgradeSection from "@/components/section";
+import Section2 from "@/components/section2";
 
 function page() {
   return (
@@ -21,7 +22,7 @@ function page() {
       <br className="sm:hidden" />
 
       {/* Section: uhhmm Something called Manage  */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-white border-b-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
@@ -33,7 +34,6 @@ function page() {
               Who is Nexcent suitable for?
             </p>
           </div>
-
           <div className="mt-2  grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16">
             {/* I am number 1 😉*/}
             <Card className="border-0 shadow-none bg-transparent text-center">
@@ -82,6 +82,7 @@ function page() {
 
       {/* section: Section */}
       <PixelgradeSection />
+      <Section2 />
     </div>
   );
 }

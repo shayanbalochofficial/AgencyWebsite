@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function PixelgradeSection() {
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-white border-b-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image - left on desktop, bottom on mobile (text first for better mobile reading) */}
