@@ -12,6 +12,7 @@ import {
 import PixelgradeSection from "@/components/section";
 import Section2 from "@/components/section2";
 import Design from "@/components/design";
+import Tesla from "@/components/tesla";
 
 function page() {
   return (
@@ -85,6 +86,7 @@ function page() {
       <PixelgradeSection />
       <Section2 />
       <Design />
+      <Tesla />
     </div>
   );
 }
