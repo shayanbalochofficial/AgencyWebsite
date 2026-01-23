@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card";
 import PixelgradeSection from "@/components/section";
 import Section2 from "@/components/section2";
+import Design from "@/components/design";
 
 function page() {
   return (
@@ -83,6 +84,7 @@ function page() {
       {/* section: Section */}
       <PixelgradeSection />
       <Section2 />
+      <Design />
     </div>
   );
 }
