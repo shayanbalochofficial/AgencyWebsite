@@ -40,6 +40,8 @@ export default function LastSection() {
                 What are your safeguarding responsibilities and how can you
                 manage them?
               </h3>
+              
+              
 
               <Link
                 href="#"
