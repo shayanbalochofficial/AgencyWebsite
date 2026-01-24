@@ -1,4 +1,4 @@
-```markdown
+
 # Nexcent Landing Page
 
 A modern, fully responsive landing page built with **Next.js 16** (App Router), **Tailwind CSS**, and **shadcn/ui**. This is a pixel-perfect recreation of the popular Nexcent template, featuring smooth mobile navigation, clean typography, and reusable components.
