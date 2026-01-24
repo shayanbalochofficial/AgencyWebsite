@@ -14,6 +14,7 @@ import Section2 from "@/components/section2";
 import Design from "@/components/design";
 import Tesla from "@/components/tesla";
 import LastSection from "@/components/lastSection";
+import Footer from "@/components/footer";
 
 function page() {
   return (
@@ -89,6 +90,7 @@ function page() {
       <Design />
       <Tesla />
       <LastSection />
+      <Footer />
     </div>
   );
 }

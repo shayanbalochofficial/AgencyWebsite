@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { Instagram, Dribbble, Twitter, Youtube } from "lucide-react";
+import { Instagram, Dribbble, Twitter, Youtube, Send } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 const companyLinks = [
   { name: "About us", href: "#" },
@@ -9,6 +11,14 @@ const companyLinks = [
   { name: "Contact us", href: "#" },
   { name: "Pricing", href: "#" },
   { name: "Testimonials", href: "#" },
+];
+
+const supportLinks = [
+  { name: "Help center", href: "#" },
+  { name: "Terms of service", href: "#" },
+  { name: "Legal", href: "#" },
+  { name: "Privacy policy", href: "#" },
+  { name: "Status", href: "#" },
 ];
 
 export default function Footer() {
@@ -25,6 +35,7 @@ export default function Footer() {
                 height={40}
                 className="h-10 w-10"
               />
+
               <span className="ml-3 text-2xl font-bold text-white">
                 Nexcent
               </span>
@@ -82,6 +93,42 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+          </div>
+
+          <div>
+            <h3 className="text-white font-semibold text-lg mb-6">Support</h3>
+            <ul className="space-y-4">
+              {supportLinks.map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.href}
+                    className="text-base hover:text-green-500 transition"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-white font-semibold text-lg mb-6">
+              Stay up to date
+            </h3>
+            <div className="relative max-w-sm">
+              <Input
+                type="email"
+                placeholder="Your email address"
+                className="bg-gray-800 border-gray-700 text-white placeholder-gray-500 pr-12 rounded-lg h-12 focus:ring-green-500 focus:border-green-500"
+              />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="absolute right-1 top-1/2 -translate-y-1/2 h-10 w-10 text-white hover:text-green-500 hover:bg-transparent"
+              >
+                <Send className="w-5 h-5" />
+              </Button>
+            </div>
           </div>
         </div>
       </div>
